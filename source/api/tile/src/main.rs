@@ -34,7 +34,7 @@ fn error() -> http::Result<http::Response<String>> {
 }
 
 fn main() {
-    let manager = ConnectionManager::<SqliteConnection>::new("database/europe_switzerland.mbtiles");
+    let manager = ConnectionManager::<SqliteConnection>::new("database/asia_taiwan.mbtiles");
     let pool =
         r2d2::Pool::builder()
             .max_size(15)
